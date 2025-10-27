@@ -1,14 +1,4 @@
-// TODO LIST FOR SCRIPT.JS
-// - [x] Add smooth scrolling for navigation links
-// - [x] Implement back to top button functionality
-// - [x] Add scroll animations for sections
-// - [x] Add mobile menu toggle functionality
-// - [x] Add form validation for contact section
-// - [x] Add particle animation effects
-// - [x] Optimize performance and accessibility
-// - [x] Add form submission with loading states
-// - [x] Add toast notifications for user feedback
-// - [x] Enhance mobile menu animations
+
 
 // DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
