@@ -16,8 +16,8 @@
         "@context": "https://schema.org",
         "@type": "Event",
         "name": "5th Conference on Plasma Simulation - CPS 2026",
-        "startDate": "2026-01-21",
-        "endDate": "2026-01-23",
+        "startDate": "2026-01-29",
+        "endDate": "2026-01-31",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
@@ -184,9 +184,74 @@
             outline-offset: 2px;
         }
 
+        /* Hero Section Specific Button Styles */
+        .hero .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+        }
+
+        .hero .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .hero .btn-primary:hover {
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.6);
+        }
+
+        .hero .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .hero .btn-outline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero .btn-outline:hover::before {
+            left: 100%;
+        }
+
+        .hero .btn-outline:hover {
+            background: white;
+            color: var(--primary-color);
+            border-color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Regular button styles for other sections */
         .btn-primary {
             background: var(--gradient-primary);
             color: white;
+            border: none;
         }
 
         .btn-primary:hover {
@@ -534,7 +599,6 @@
             font-size: 1.05rem;
             color: var(--text-secondary);
             margin: 0;
-            text-align: center;
         }
 
         .collaboration-content strong {
@@ -1722,16 +1786,16 @@ section:nth-of-type(4n + 5) { background-color: var(--seq-4) !important; }
         <div class="container">
             <div class="section-header">
                 <h1 class="section-title">5th Conference on Plasma Simulation</h1>
-                <p class="section-subtitle hero-subtitle">CPS 2026</p>
+                <p class="section-subtitle hero-subtitle">CPS-2026 | Indore, India</p>
             </div>
             <div class="hero-details">
                 <div class="detail-item">
                     <i class="fas fa-calendar-alt"></i>
-                    <span>January 21-23, 2026</span>
+                    <span>January 29-31, 2026</span>
                 </div>
                 <div class="detail-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>IPS Academy, Indore & IIT Indore</span>
+                    <span>Skyline Resort & Convention Center, Indore</span>
                 </div>
             </div>
             <div class="hero-buttons">
@@ -1754,7 +1818,7 @@ section:nth-of-type(4n + 5) { background-color: var(--seq-4) !important; }
             <div class="section-header">
                 <h2 class="section-title">About CPS‑2026</h2>
                 <div class="section-subtitle">Premier Forum for Computational Plasma Physics</div>
-                <div class="section-subtitle" style="margin-top: 0.5rem; font-size: 1rem; color: var(--text-muted);">Organized jointly by IPS Academy, Indore & IIT Indore</div>
+                <div class="section-subtitle" style="margin-top: 0.5rem; font-size: 1rem; color: var(--text-muted);"><strong>Organized jointly by IPS Academy, Indore & IIT Indore</strong></div>
             </div>
 
             <!-- Host Institutions Cards Section -->
@@ -1878,23 +1942,23 @@ section:nth-of-type(4n + 5) { background-color: var(--seq-4) !important; }
                     <tbody>
                         <tr style="background-color: var(--card-color);">
                             <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">Abstract Submission Opens</td>
-                            <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">1st November 2025</td>
+                            <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">24 November 2025</td>
                         </tr>
                         <tr style="background-color: var(--surface-color);">
                             <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">Abstract Submission Deadline</td>
-                            <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">30th November 2025</td>
+                            <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">15 December 2025</td>
                         </tr>
                         <tr style="background-color: var(--card-color);">
                             <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">Registration Opens</td>
-                            <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">1st December 2025</td>
+                            <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">16 December 2025</td>
                         </tr>
                         <tr style="background-color: var(--surface-color);">
                             <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">Registration Deadline</td>
-                            <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">31st December 2025</td>
+                            <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">31 December 2025</td>
                         </tr>
                         <tr style="background-color: var(--card-color);">
                             <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">Conference Dates</td>
-                            <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">January 21-23, 2026</td>
+                            <td style="padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color);">January 29-31, 2026</td>
                         </tr>
                     </tbody>
                 </table>
@@ -2026,8 +2090,8 @@ section:nth-of-type(4n + 5) { background-color: var(--seq-4) !important; }
                 <div class="committee-card">
                     <h3><i class="fas fa-star"></i> National Advisory Committee</h3>
                     <div class="committee-members">
-                        <div class="member">Ar. Achal Choudhary, President IPS Academy, Indore</div>
                         <div class="member">Dr. Tapas Ganguli, Director, IPR Gandhinagar</div>
+                        <div class="member">Ar. Achal Choudhary, President IPS Academy, Indore</div>
                         <div class="member">Prof. Abhirup Datta, Dean R&D, IIT Indore</div>
                         <div class="member">Prof. Kandaswamy Subramanian, Ashoka University</div>
                         <div class="member">Prof. Abhijit Sen, IPR Gandhinagar</div>
@@ -2045,17 +2109,18 @@ section:nth-of-type(4n + 5) { background-color: var(--seq-4) !important; }
                 </div>
 
                 <div class="committee-card">
-                    <h3><i class="fas fa-flask"></i> Scientific Organizing Committee</h3>
+                    <h3><i class="fas fa-flask"></i> Scientific Advisory Committee</h3>
                     <div class="committee-members">
-                        <div class="member highlight">Dr. Nishant Sirse, IPSA Indore (Co-convener)</div>
-                        <div class="member highlight">Dr. Bhargav Vaidya, IIT Indore (Co-convener)</div>
-                        <div class="member highlight">Dr. Sarveshwar Sharma, IPR Gandhinagar (Convener)</div>
+                        <div class="member highlight">Dr. Nishant Sirse, IPSA Indore (Convener)</div>
+                        <div class="member highlight">Dr. Bhargav Vaidya, IIT Indore (Convener)</div>
+                        <div class="member">Dr. Sarveshwar Sharma, IPR Gandhinagar</div>
                         <div class="member">Dr. Mrityunjay Kundu, IPR Gandhinagar</div>
                         <div class="member">Prof. Amar Kakad, IIG Mumbai</div>
                         <div class="member">Prof. Animesh Kuley, IISc, Bangalore</div>
                         <div class="member">Prof. Bhooshan Paradkar, CEBS Mumbai</div>
                         <div class="member">Prof. Durgesh Tripathi, IUCAA Pune</div>
                         <div class="member">Dr. Sunil Kumar Jain, RRCAT Indore</div>
+                        <div class="member">Dr. Bhaskar Chaudhury, DA-IICT Gandhinagar</div>
                     </div>
                 </div>
 
@@ -2068,9 +2133,9 @@ section:nth-of-type(4n + 5) { background-color: var(--seq-4) !important; }
                         <div class="member">Dr. Rupal S Tomar, IPSA CSAR, Indore</div>
                         <div class="member">Mr. Avadhesh Maurya, IPR, Gandhinagar</div>
                         <div class="member">Manish Pathak, RRCAT, Indore</div>
-                        <div class="member">Shruti Sharma, IPSA CSAR, Indore</div>
                         <div class="member">Akanshu Khandelwal, IPSA CSAR, Indore</div>
                         <div class="member">Shivani Geete, IPSA CSAR, Indore</div>
+                        <div class="member">Shruti Sharma, IPSA CSAR, Indore</div>
                         <div class="member">Meenal Khare, IPSA CSAR, Indore</div>
                         <div class="member">Devesh Sharma, IIT, Indore</div>
                         <div class="member">Aditya Sharma, IIT, Indore</div>
@@ -2150,34 +2215,6 @@ section:nth-of-type(4n + 5) { background-color: var(--seq-4) !important; }
                                     <figcaption class="org-name">IIT Indore</figcaption>
                                 </figure>
                             </article>
-
-                            <article class="org-card" role="listitem" aria-label="Institute for Plasma Research">
-                                <figure class="org-figure">
-                                    <img
-                                        class="org-logo"
-                                        src="ref_image/logo/ipr.png"
-                                        alt="Institute for Plasma Research (IPR)"
-                                        loading="lazy"
-                                        width="240"
-                                        height="160"
-                                    >
-                                    <figcaption class="org-name">Institute for Plasma Research</figcaption>
-                                </figure>
-                            </article>
-
-                            <article class="org-card" role="listitem" aria-label="BRNS">
-                                <figure class="org-figure">
-                                    <img
-                                        class="org-logo"
-                                        src="ref_image/logo/BRNS_logo.png"
-                                        alt="Board of Research in Nuclear Sciences (BRNS)"
-                                        loading="lazy"
-                                        width="240"
-                                        height="160"
-                                    >
-                                    <figcaption class="org-name">BRNS</figcaption>
-                                </figure>
-                            </article>
             </div>
         </div>
     </section>
@@ -2216,8 +2253,8 @@ section:nth-of-type(4n + 5) { background-color: var(--seq-4) !important; }
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <h3>Venue Locations</h3>
-                    <p>IPS Academy, Centre for Scientific and Applied Research, Indore<br>
-                    Indian Institute of Technology, Indore</p>
+                    <p>Skyline Resort & Convention Center, Indore, Madhya Pradesh 452020</p>
+                    <p style="margin-top: 1rem;"><a href="https://maps.app.goo.gl/X5DtK4LhJieU8J6w6" target="_blank" style="color: var(--primary-color); text-decoration: underline; font-weight: 600;"><i class="fas fa-map-marked-alt"></i> View on Google Maps</a></p>
                 </div>
             </div>
         </div>
@@ -2230,16 +2267,16 @@ section:nth-of-type(4n + 5) { background-color: var(--seq-4) !important; }
                 <div class="footer-left">
                     <h3><i class="fas fa-atom"></i> CPS-2026</h3>
                     <p>5th Conference on Plasma Simulation</p>
-                    <p>January 21-23, 2026 | Indore, India</p>
+                    <p>January 29-31, 2026 | Indore, India</p>
                     <p>Organized by IPS Academy & IIT Indore</p>
-                    <p>© Copyright CPS-2025 All Rights Reserved (BTSD-IPR)</p>
+                    <p>© Copyright CPS-2026 All Rights Reserved (BTSD-IPR)</p>
                 </div>
                 <div class="mobile-footer-header">
                     <h3><i class="fas fa-atom"></i> CPS-2026</h3>
                     <p>5th Conference on Plasma Simulation</p>
-                    <p>January 21-23, 2026 | Indore, India</p>
+                    <p>January 29-31, 2026 | Indore, India</p>
                     <p>Organized by IPS Academy & IIT Indore</p>
-                    <p>© Copyright CPS-2025 All Rights Reserved (BTSD-IPR)</p>
+                    <p>© Copyright CPS-2026 All Rights Reserved (BTSD-IPR)</p>
                 </div>
             </div>
         </div>
